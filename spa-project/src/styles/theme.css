@@ -1,0 +1,25 @@
+:root {
+    --primary-color: #3b82f6;
+    --secondary-color: #10b981;
+    --background-color: #ffffff;
+    --text-color: #1f2937;
+  }
+  
+  [data-theme="dark"] {
+    --primary-color: #2563eb;
+    --secondary-color: #047857;
+    --background-color: #111827;
+    --text-color: #f9fafb;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .product-image {
+    width: 200px; /* Ширина */
+    height: 200px; /* Высота */
+    object-fit: cover; /* Обрезка, чтобы изображение заполняло контейнер */
+  }
+  
